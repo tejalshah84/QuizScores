@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/view_stats"
+    android:title="Class Stats"
+    android:icon="@android:drawable/ic_dialog_info"
+    android:contentDescription="MenuStats"
+    android:titleCondensed="Class Stats"
+    android:layout_gravity="end"
+    android:alphabeticShortcut="s"
+    app:showAsAction="always"/>
+</menu>

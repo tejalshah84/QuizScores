@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    android:orientation="vertical"
+    tools:context=".ui.StudentDetailFragment">
+
+    <TextView android:id="@+id/student_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle = "bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:text="@string/DetailTitle"
+        android:layout_marginBottom="50dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="25dp">
+
+        <TableRow android:id="@+id/Heading"
+            android:paddingBottom="25dp">
+            <TextView android:id="@+id/Q1Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q1Head"/>
+            <TextView android:id="@+id/Q2Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q2Head"/>
+            <TextView android:id="@+id/Q3Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q3Head"/>
+            <TextView android:id="@+id/Q4Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q4Head"/>
+            <TextView android:id="@+id/Q5Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q5Head"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/StudScore">
+            <TextView android:id="@+id/Q1Stu"
+                android:text="@string/Q1Val"/>
+            <TextView android:id="@+id/Q2Stu"
+                android:text="@string/Q2Val"/>
+            <TextView android:id="@+id/Q3Stu"
+                android:text="@string/Q3Val"/>
+            <TextView android:id="@+id/Q4Stu"
+                android:text="@string/Q4Val"/>
+            <TextView android:id="@+id/Q5Stu"
+                android:text="@string/Q5Val"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiz Scores</string>
+    <string name="title_student_detail">Student Detail</string>
+    <string name="ListItemLabel">Student ID: </string>
+    <string name="ListItemIDVal"></string>
+    <string name="DetailTitle"></string>
+    <string name="Q1Head">Q1</string>
+    <string name="Q2Head">Q2</string>
+    <string name="Q3Head">Q3</string>
+    <string name="Q4Head">Q4</string>
+    <string name="Q5Head">Q5</string>
+    <string name="Q1Val"></string>
+    <string name="Q2Val"></string>
+    <string name="Q3Val"></string>
+    <string name="Q4Val"></string>
+    <string name="Q5Val"></string>
+</resources>

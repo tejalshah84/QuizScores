@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/class_stats"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    android:orientation="vertical"
+    tools:context=".ui.ClassStatisticsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView android:id="@+id/class_stats_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle = "bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:text="Class Summary: "
+        android:layout_marginBottom="50dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="5dp">
+
+        <TableRow android:id="@+id/Heading"
+            android:paddingBottom="25dp">
+            <TextView android:id="@+id/QHeading"
+                style="@style/DetailTitleFont"
+                android:text=""/>
+            <TextView android:id="@+id/Q1Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q1Head"/>
+            <TextView android:id="@+id/Q2Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q2Head"/>
+            <TextView android:id="@+id/Q3Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q3Head"/>
+            <TextView android:id="@+id/Q4Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q4Head"/>
+            <TextView android:id="@+id/Q5Heading"
+                style="@style/DetailTitleFont"
+                android:text="@string/Q5Head"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/lowScore"
+            android:paddingBottom="25dp">
+            <TextView android:id="@+id/low"
+                style="@style/DetailTitleFont"
+                android:text="Low"/>
+            <TextView android:id="@+id/Q1Low"
+                android:text="1"/>
+            <TextView android:id="@+id/Q2Low"
+                android:text="2"/>
+            <TextView android:id="@+id/Q3Low"
+                android:text="3"/>
+            <TextView android:id="@+id/Q4Low"
+                android:text="4"/>
+            <TextView android:id="@+id/Q5Low"
+                android:text="5"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/highScore"
+            android:paddingBottom="25dp">
+            <TextView android:id="@+id/high"
+                style="@style/DetailTitleFont"
+                android:text="High"/>
+            <TextView android:id="@+id/Q1High"
+                android:text="96"/>
+            <TextView android:id="@+id/Q2High"
+                android:text="97"/>
+            <TextView android:id="@+id/Q3High"
+                android:text="98"/>
+            <TextView android:id="@+id/Q4High"
+                android:text="99"/>
+            <TextView android:id="@+id/Q5High"
+                android:text="100"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/avgScore"
+            android:paddingBottom="25dp">
+            <TextView android:id="@+id/avg"
+                style="@style/DetailTitleFont"
+                android:text="Avg."/>
+            <TextView android:id="@+id/Q1Avg"
+                android:text="50"/>
+            <TextView android:id="@+id/Q2Avg"
+                android:text="50"/>
+            <TextView android:id="@+id/Q3Avg"
+                android:text="50"/>
+            <TextView android:id="@+id/Q4Avg"
+                android:text="50"/>
+            <TextView android:id="@+id/Q5Avg"
+                android:text="50"/>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
+
